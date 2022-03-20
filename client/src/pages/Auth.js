@@ -1,11 +1,19 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Button, Card, Container, Form, Row } from "react-bootstrap";
-import { NavLink, useLocation } from "react-router-dom";
-import { LOGIN_ROUTE, REGISTRATION_ROUTE } from "../utils/consts";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { LOGIN_ROUTE, REGISTRATION_ROUTE, SHOP_ROUTE } from "../utils/consts";
+import { Context } from '..'
 
 const Auth = () => {
     const location = useLocation()
     const isLogin = location.pathname === LOGIN_ROUTE
+    const {user} = useContext(Context)
+    const navigate = useNavigate()
+
+    const signIn =()=> {
+        user.setIsAuth(true)
+        navigate(SHOP_ROUTE)
+    }
     return(
         <Container 
             className='d-flex justify-content-center align-items-center'
@@ -24,6 +32,7 @@ const Auth = () => {
                         <Button
                             variant="outline-success"    
                             className="mt-2"
+                            onClick={()=> signIn()}
                         >
                             {isLogin ? 'Sign In' : 'Sign up'}
                         </Button>

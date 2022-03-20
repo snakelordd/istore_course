@@ -20,6 +20,10 @@ export default class DeviceStore {
             { id: 2, name: 'IPhone 11',price: 80000, rating: 5, img: 'https://www.techinn.com/f/13782/137821856/apple-iphone-12-pro-max-6gb-512gb-6.7.jpg'},
             { id: 3, name: 'IPhone 10',price: 50000, rating: 5, img: 'https://www.techinn.com/f/13782/137821856/apple-iphone-12-pro-max-6gb-512gb-6.7.jpg'},
             { id: 4, name: 'IPhone 8',price: 30000, rating: 5, img: 'https://www.techinn.com/f/13782/137821856/apple-iphone-12-pro-max-6gb-512gb-6.7.jpg'},
+            { id: 5, name: 'IPhone 12',price: 100000, rating: 5, img: 'https://www.techinn.com/f/13782/137821856/apple-iphone-12-pro-max-6gb-512gb-6.7.jpg'},
+            { id: 6, name: 'IPhone 11',price: 80000, rating: 5, img: 'https://www.techinn.com/f/13782/137821856/apple-iphone-12-pro-max-6gb-512gb-6.7.jpg'},
+            { id: 7, name: 'IPhone 10',price: 50000, rating: 5, img: 'https://www.techinn.com/f/13782/137821856/apple-iphone-12-pro-max-6gb-512gb-6.7.jpg'},
+            { id: 8, name: 'IPhone 8',price: 30000, rating: 5, img: 'https://www.techinn.com/f/13782/137821856/apple-iphone-12-pro-max-6gb-512gb-6.7.jpg'},
 
         ]
         this._selectedType = {}
