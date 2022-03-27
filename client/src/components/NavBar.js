@@ -11,9 +11,11 @@ export const NavBar = observer(()=> {
     const navigate = useNavigate()
 
     const signOut = ()=> {
+      user.setUser({})
       user.setIsAuth(false)
       navigate(LOGIN_ROUTE)
     }
+
     return(
         <Navbar bg="dark" variant="dark">
             <Container>
